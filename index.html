@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CASCADA — Design Preview V10</title>
+<title>CASCADA — Piedras Blancas · Osa Peninsula · Costa Rica</title>
 <style>
   [data-de] { display: none; }
   body.de [data-en] { display: none; }
@@ -421,10 +421,43 @@
   </div>
 </section>
 
-<!-- ── FULL BLEED — WATERFALL ── -->
+<!-- ── WATERFALL ── -->
 <div class="full-bleed-tall">
   <img src="images/MAIN2_53266586311_bb235012b0_o.jpg" alt="The waterfall — CASCADA">
 </div>
+
+<!-- ── VIDEO ── -->
+<div style="background:#1a1a1a;line-height:0">
+  <div id="yt-facade" style="position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;cursor:pointer" onclick="loadYT()">
+    <img id="yt-thumb"
+      src="https://img.youtube.com/vi/S7rr71IDHzU/maxresdefault.jpg"
+      onerror="this.src='https://img.youtube.com/vi/S7rr71IDHzU/hqdefault.jpg'"
+      alt="CASCADA — Piedras Blancas · Play video"
+      style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82)">
+    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
+      <div style="width:clamp(56px,6vw,72px);height:clamp(56px,6vw,72px);background:rgba(255,255,255,0.12);border:1px solid rgba(176,138,78,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:background .25s" id="yt-btn">
+        <svg viewBox="0 0 24 24" style="width:clamp(20px,2.2vw,28px);margin-left:3px" fill="#b08a4e"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div style="font-family:'Inter',sans-serif;font-size:clamp(.55rem,.75vw,.7rem);letter-spacing:.22em;text-transform:uppercase;color:rgba(176,138,78,.8)">
+        <span data-en>Watch — CASCADA · Piedras Blancas · Osa Peninsula</span>
+        <span data-de>Ansehen — CASCADA · Piedras Blancas · Halbinsel Osa</span>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function loadYT() {
+  var f = document.getElementById('yt-facade');
+  f.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/S7rr71IDHzU?autoplay=1&rel=0&modestbranding=1&color=white&vq=hd1080" title="CASCADA" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>';
+  f.style.cursor = 'default';
+}
+document.getElementById('yt-facade').addEventListener('mouseenter', function() {
+  var b = document.getElementById('yt-btn'); if(b) b.style.background='rgba(176,138,78,.2)';
+});
+document.getElementById('yt-facade').addEventListener('mouseleave', function() {
+  var b = document.getElementById('yt-btn'); if(b) b.style.background='rgba(255,255,255,0.12)';
+});
+</script>
 
 <!-- ── THE LAND ── -->
 <div class="section" id="the-land">
