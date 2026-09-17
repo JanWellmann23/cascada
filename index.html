@@ -527,7 +527,162 @@ document.getElementById('yt-facade').addEventListener('mouseleave', function() {
 </div>
 
 <!-- ── PHOTO CAROUSEL ── -->
-<div style="background:#1a1a1a;padding:0;position:relative;overflow:hidden" id="carousel-wrap">
+<div style="background:#0f0f0f;position:relative;user-select:none" id="carousel-wrap">
+
+  <!-- Track -->
+  <div id="carousel-track" style="display:flex;transition:transform .38s cubic-bezier(.4,0,.2,1);will-change:transform">
+    <div class="cslide"><img src="images/MAIN2_53266586311_bb235012b0_o.jpg" alt="The waterfall"></div>
+    <div class="cslide"><img src="images/54997873156_cb9a1103d7_o.jpg" alt="Cascada"></div>
+    <div class="cslide"><img src="images/53027690202_12fa0b9075_6k.jpg" alt="Panorama"></div>
+    <div class="cslide"><img src="images/52799647996_56e5763b88_6k.jpg" alt="Valley at dawn"></div>
+    <div class="cslide"><img src="images/53249288636_4572a52e3f_6k.jpg" alt="Valley"></div>
+    <div class="cslide"><img src="images/53028281026_3b9617fafa_o.jpg" alt="Lodge access"></div>
+    <div class="cslide"><img src="images/53062644049_e75ce17655_6k.jpg" alt="Lodge canopy"></div>
+    <div class="cslide"><img src="images/53266597716_552ee902f3_o.jpg" alt="Lodge structure"></div>
+    <div class="cslide"><img src="images/53028281376_198ee8759e_6k.jpg" alt="Lodge path"></div>
+    <div class="cslide"><img src="images/517290629_10163725536806579_6514629461215702997_n.jpg" alt="Misty valley"></div>
+    <div class="cslide"><img src="images/517029617_10163725537206579_6765551131747029530_n.jpg" alt="Forest dawn"></div>
+    <div class="cslide"><img src="images/516765114_10163725765481579_4871770887006993879_n.jpg" alt="River"></div>
+    <div class="cslide"><img src="images/516797231_10163745797461579_5589427010182820198_n.jpg" alt="Land"></div>
+    <div class="cslide"><img src="images/517410395_10163740554731579_3958886203666719543_n.jpg" alt="View"></div>
+    <div class="cslide"><img src="images/517711212_10163746937086579_5786312388923328810_n.jpg" alt="Forest"></div>
+    <div class="cslide"><img src="images/517871273_10163746937431579_2037921338546689534_n.jpg" alt="Trees"></div>
+    <div class="cslide"><img src="images/518332547_10163770772116579_3115344415751632499_n.jpg" alt="Canopy"></div>
+    <div class="cslide"><img src="images/518460205_10163757939871579_3949890924342800659_n.jpg" alt="Landscape"></div>
+    <div class="cslide"><img src="images/516551849_10163748046436579_8984502063747406059_n.jpg" alt="Nature"></div>
+    <div class="cslide"><img src="images/516551884_10163734509196579_5741018046096127222_n.jpg" alt="Forest path"></div>
+    <div class="cslide"><img src="images/516609401_10163733851286579_3218236924661613437_n.jpg" alt="River trail"></div>
+    <div class="cslide"><img src="images/516521674_10163734509226579_983278550575822135_n.jpg" alt="Summit"></div>
+    <div class="cslide"><img src="images/517188983_10163734509351579_856405539297858740_n.jpg" alt="Waterfall area"></div>
+    <div class="cslide"><img src="images/475811654_10163029603961579_6539189531709798550_n.jpg" alt="Land aerial"></div>
+    <div class="cslide"><img src="images/475897093_10163029604006579_1730901161286377872_n.jpg" alt="Forest aerial"></div>
+    <div class="cslide"><img src="images/475991764_10163029604061579_7643466696708446816_n.jpg" alt="Aerial view"></div>
+    <div class="cslide"><img src="images/487790029_10163262103936579_174297503112397679_n.jpg" alt="Landscape"></div>
+    <div class="cslide"><img src="images/488622424_10163262104276579_5114781203012436571_n.jpg" alt="River view"></div>
+    <div class="cslide"><img src="images/52115517810_28268e809b_o.jpg" alt="Forest"></div>
+    <div class="cslide"><img src="images/52532331342_b8afe575dc_6k.jpg" alt="Trees"></div>
+    <div class="cslide"><img src="images/52798848716_79467ef39d_6k.jpg" alt="Valley"></div>
+    <div class="cslide"><img src="images/52805050536_4772a2789b_6k.jpg" alt="Forest trail"></div>
+    <div class="cslide"><img src="images/52850587467_c24873f959_6k.jpg" alt="Nature"></div>
+    <div class="cslide"><img src="images/52851306959_9251877bb5_6k.jpg" alt="Landscape"></div>
+    <div class="cslide"><img src="images/53032831795_3c72a51247_o.jpg" alt="View"></div>
+    <div class="cslide"><img src="images/53207954182_ff57c2029c_6k.jpg" alt="Forest"></div>
+    <div class="cslide"><img src="images/53209347000_7d4414a817_6k.jpg" alt="Valley"></div>
+    <div class="cslide"><img src="images/53230630228_3c5f7b0ce2_o.jpg" alt="Canopy"></div>
+    <div class="cslide"><img src="images/53230699909_6cc286ceac_6k.jpg" alt="Trees"></div>
+    <div class="cslide"><img src="images/53266596611_6e4ea5b294_6k.jpg" alt="Landscape"></div>
+    <div class="cslide"><img src="images/53267063525_d0f8e1a7f4_o.jpg" alt="Forest"></div>
+    <div class="cslide"><img src="images/53425816760_b8b5b623c5_6k.jpg" alt="View"></div>
+    <div class="cslide"><img src="images/53434483254_83b3ce57b4_6k.jpg" alt="Trail"></div>
+    <div class="cslide"><img src="images/53447048009_93bab6cf6f_6k.jpg" alt="Nature"></div>
+    <div class="cslide"><img src="images/53565817288_81c69e07e0_o.jpg" alt="Waterfall"></div>
+    <div class="cslide"><img src="images/53623289140_be59d613dc_5k.jpg" alt="Forest"></div>
+    <div class="cslide"><img src="images/54020440190_315f209d50_o.jpg" alt="Landscape"></div>
+    <div class="cslide"><img src="images/54308855836_bb3269ebed_6k.jpg" alt="Valley"></div>
+    <div class="cslide"><img src="images/54325007976_e87dc26818_o.jpg" alt="View"></div>
+    <div class="cslide"><img src="images/54737433776_26392f638b_6k.jpg" alt="Forest"></div>
+    <div class="cslide"><img src="images/54753238811_c970619efc_o.jpg" alt="Nature"></div>
+    <div class="cslide"><img src="images/54998060833_ff1553e540_o.jpg" alt="Landscape"></div>
+    <div class="cslide"><img src="images/Image.jpeg" alt="CASCADA"></div>
+    <div class="cslide"><img src="images/Image1.jpeg" alt="CASCADA"></div>
+    <div class="cslide"><img src="images/Image2.jpeg" alt="CASCADA"></div>
+    <div class="cslide"><img src="images/LAST_SHOT_SMALL.jpg" alt="CASCADA"></div>
+    <div class="cslide"><img src="images/53626288776_c1c821c237_o.jpg" alt="Forest"></div>
+  </div>
+
+  <!-- Left arrow -->
+  <button onclick="moveCarousel(-1)" aria-label="Previous" style="
+    position:absolute;top:50%;left:0;transform:translateY(-50%);
+    background:rgba(15,15,15,.72);border:none;color:#fff;
+    width:clamp(44px,5vw,64px);height:clamp(80px,14vw,160px);
+    cursor:pointer;z-index:10;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:6px;
+    transition:background .2s;padding:0"
+    onmouseover="this.style.background='rgba(176,138,78,.82)'"
+    onmouseout="this.style.background='rgba(15,15,15,.72)'">
+    <svg viewBox="0 0 24 24" width="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg>
+    <span style="font-size:.48rem;letter-spacing:.14em;text-transform:uppercase;writing-mode:vertical-rl;transform:rotate(180deg);color:rgba(255,255,255,.6)">PREV</span>
+  </button>
+
+  <!-- Right arrow -->
+  <button onclick="moveCarousel(1)" aria-label="Next" style="
+    position:absolute;top:50%;right:0;transform:translateY(-50%);
+    background:rgba(15,15,15,.72);border:none;color:#fff;
+    width:clamp(44px,5vw,64px);height:clamp(80px,14vw,160px);
+    cursor:pointer;z-index:10;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:6px;
+    transition:background .2s;padding:0"
+    onmouseover="this.style.background='rgba(176,138,78,.82)'"
+    onmouseout="this.style.background='rgba(15,15,15,.72)'">
+    <svg viewBox="0 0 24 24" width="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+    <span style="font-size:.48rem;letter-spacing:.14em;text-transform:uppercase;writing-mode:vertical-rl;color:rgba(255,255,255,.6)">NEXT</span>
+  </button>
+
+  <!-- Counter -->
+  <div id="carousel-counter" style="
+    position:absolute;bottom:14px;left:50%;transform:translateX(-50%);
+    font-family:'Inter',sans-serif;font-size:.58rem;letter-spacing:.18em;
+    color:rgba(255,255,255,.35);background:rgba(0,0,0,.4);
+    padding:4px 12px;border-radius:20px">
+    1 / 56
+  </div>
+</div>
+
+<style>
+.cslide {
+  flex: 0 0 100%; width: 100%;
+  height: clamp(320px, 70vh, 680px);
+  overflow: hidden; background: #0f0f0f;
+  display: flex; align-items: center; justify-content: center;
+}
+.cslide img {
+  width: 100%; height: 100%;
+  object-fit: contain; /* show full image — no cropping */
+  display: block;
+}
+</style>
+
+<script>
+(function(){
+  var cur=0, total=document.querySelectorAll('.cslide').length;
+  var track=document.getElementById('carousel-track');
+  var counter=document.getElementById('carousel-counter');
+  var startX=0, auto;
+
+  function go(n){
+    cur=(n+total)%total;
+    track.style.transform='translateX(-'+cur+'00%)';
+    counter.textContent=(cur+1)+' / '+total;
+  }
+
+  window.moveCarousel=function(d){ go(cur+d); resetAuto(); };
+
+  function resetAuto(){
+    clearInterval(auto);
+    auto=setInterval(function(){ go(cur+1); },3000);
+  }
+
+  /* touch swipe */
+  track.addEventListener('touchstart',function(e){ startX=e.touches[0].clientX; },{passive:true});
+  track.addEventListener('touchend',function(e){
+    var diff=startX-e.changedTouches[0].clientX;
+    if(Math.abs(diff)>40){ go(cur+(diff>0?1:-1)); resetAuto(); }
+  });
+
+  /* keyboard */
+  document.addEventListener('keydown',function(e){
+    if(e.key==='ArrowLeft'){ go(cur-1); resetAuto(); }
+    if(e.key==='ArrowRight'){ go(cur+1); resetAuto(); }
+  });
+
+  /* pause on hover */
+  var wrap=document.getElementById('carousel-wrap');
+  wrap.addEventListener('mouseenter',function(){ clearInterval(auto); });
+  wrap.addEventListener('mouseleave',function(){ resetAuto(); });
+
+  resetAuto();
+})();
+</script>
   <div id="carousel-track" style="display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1);will-change:transform">
     <div class="cslide"><img src="images/MAIN2_53266586311_bb235012b0_o.jpg" alt="The waterfall"></div>
     <div class="cslide"><img src="images/54997873156_cb9a1103d7_o.jpg" alt="Cascada"></div>
