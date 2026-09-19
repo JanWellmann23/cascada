@@ -820,9 +820,9 @@ document.getElementById('yt-facade').addEventListener('mouseleave', function() {
     <form name="introduction" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
       <input type="hidden" name="form-name" value="introduction">
       <input type="hidden" name="bot-field" style="display:none">
-      <input type="text" name="name" class="form-field" placeholder="Name" required>
-      <input type="email" name="email" class="form-field" placeholder="E-Mail" required>
-      <textarea name="message" class="form-field" rows="3" placeholder="..." style="resize:none"></textarea>
+      <input type="text" name="name" class="form-field" placeholder="Name" autocomplete="name" required>
+      <input type="email" name="email" class="form-field" placeholder="E-Mail" autocomplete="off" required>
+      <textarea name="message" class="form-field" rows="3" placeholder="..." autocomplete="off" style="resize:none"></textarea>
       <button type="submit" class="btn-primary" style="width:100%">
         <span data-en>Send</span><span data-de>Absenden</span>
       </button>
