@@ -822,7 +822,7 @@ document.getElementById('yt-facade').addEventListener('mouseleave', function() {
       <input type="hidden" name="bot-field" style="display:none">
       <input type="text" name="name" class="form-field" placeholder="Name" autocomplete="name" required>
       <input type="email" name="email" class="form-field" placeholder="E-Mail" autocomplete="off" required>
-      <textarea name="message" class="form-field" rows="3" placeholder="..." autocomplete="off" style="resize:none"></textarea>
+      <textarea name="message" class="form-field" rows="5" placeholder="Tell us a little about yourself — what draws you to this project, what you are looking for, and what you would bring to the community. No right or wrong answers." autocomplete="off" style="resize:none"></textarea>
       <button type="submit" class="btn-primary" style="width:100%">
         <span data-en>Send</span><span data-de>Absenden</span>
       </button>
@@ -857,7 +857,7 @@ function setLang(l) {
   var msg = document.querySelector('textarea[name="message"]');
   if (name) name.placeholder = l === 'de' ? 'Name' : 'Name';
   if (email) email.placeholder = l === 'de' ? 'E-Mail' : 'Email';
-  if (msg) msg.placeholder = l === 'de' ? 'Ein paar Zeilen über Sie und was Sie hierher zieht …' : 'A few lines about yourself and what draws you here …';
+  if (msg) msg.placeholder = l === 'de' ? 'Erzählen Sie uns etwas über sich — was zieht Sie zu diesem Projekt, was suchen Sie, und was würden Sie in die Gemeinschaft einbringen. Es gibt keine richtigen oder falschen Antworten.' : 'Tell us a little about yourself — what draws you to this project, what you are looking for, and what you would bring to the community. No right or wrong answers.';
 }
 
 // On load: use saved preference or auto-detect
